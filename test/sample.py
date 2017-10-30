@@ -64,5 +64,9 @@ api = UmbiAPI('85aaa4d3-333e-4212-a7bd-b64300321193')
 # print ''
 
 # print 'TopMillion'
-v(api.TopMillion(limit=100))
+# v(api.TopMillion(limit=100))
 # print ''
+
+print 'Samples'
+v(api.Samples('208.100.26.234'))
+print ''

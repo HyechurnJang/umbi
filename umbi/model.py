@@ -60,6 +60,9 @@ class UmbiAPI(Inventory):
     class TopMillion(Inventory): # Umbrella Popularity List (Top Million Domains)
         def __call__(self, limit=None): return (~self).get('/topmillion?limit=%d' % limit if limit else '/topmillion')
     
+    class Samples(Inventory):
+        def __call__(self, name, limit=None): return (~self).get('/samples/%s?limit=%d' % (name, limit) if limit else '/samples/%s' % name)
+    
     def __init__(self, token):
         Inventory.__init__(self)
         self.url = 'https://investigate.api.umbrella.com'
