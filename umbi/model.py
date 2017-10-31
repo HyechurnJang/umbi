@@ -4,8 +4,6 @@ Created on 2017. 9. 27.
 @author: HyechurnJang
 '''
 
-# https://cisco.jiveon.com/docs/DOC-1852312
-
 import requests
 from jzlib import Inventory
 
